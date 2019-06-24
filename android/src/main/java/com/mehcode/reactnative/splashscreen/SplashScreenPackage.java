@@ -17,19 +17,15 @@ import java.util.List;
 
 public class SplashScreenPackage implements ReactPackage {
     
-
-    @Override
-    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+    @Override public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }
 
     @Override
-    public List<NativeModule> createNativeModules(
-            ReactApplicationContext reactContext) {
-        List<NativeModule> modules = new ArrayList<>();
-
-        modules.add(new SplashScreenModule(reactContext));
-
-        return modules;
+    public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
+      List<NativeModule> modules = new ArrayList<>();
+      modules.add(new SplashScreenModule(reactContext));
+      return modules;
     }
+
 }
