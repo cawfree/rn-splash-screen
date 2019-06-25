@@ -30,7 +30,7 @@ public class SplashScreen {
                 if (!activity.isFinishing()) {
                     mSplashDialog = new Dialog(activity, R.style.RNSplashScreen_SplashTheme);
                     mSplashDialog.setCancelable(false);
-                    //mSplashDialog.setContentView(R.layout.splash);
+                    mSplashDialog.setContentView(R.layout.splash);
 
                     if (!mSplashDialog.isShowing()) {
                         mSplashDialog.show();
